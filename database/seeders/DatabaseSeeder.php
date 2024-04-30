@@ -32,6 +32,10 @@ class DatabaseSeeder extends Seeder
             'is_admin' => true,
         ]);
 
+        // Category::factory()->create([
+        //     'list' => ['Category A', 'Category B', 'Category C', 'empty']
+        // ]);
+
         User::factory(100)->create();
         Todo::factory(500)->create();
     }
