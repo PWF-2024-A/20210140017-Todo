@@ -22,7 +22,8 @@
                         <div class="mb-6">
                             <x-input-label for="category_id" :value="__('Category')" />
                             <select id="category_id" name="category_id"
-                                class="block w-full mt-1 text-white bg-gray-800 dark:text-gray-200">
+                            class="block w-full mt-1 border-gray-300 rounded-md shadow-sm dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600"
+                            :disabled="false">
                                 <option value="">None</option>
                                 @foreach ($categories as $category)
                                     <option value="{{ $category->id }}">{{ $category->name }}</option>
