@@ -41,6 +41,9 @@
                                     <a href="{{ route('todo.edit', $todo) }}"
                                         class="hover:underline">{{ $todo->title }}</a>
                                 </td>
+                                <td>
+                                    <p>{{ $todo->category ? $todo->category->title : 'None' }}</p>
+                                </td>
                                 <td class="hidden px-6 py-4 md:block">
                                     @if ($todo->is_complete == false)
                                     <span
